@@ -21,7 +21,7 @@
 
   "tpu_size": 8,
 
-  "bucket": "GPTJ-Music",
+  "bucket": "gptj-weights",
   "model_dir": "finetune_dir",
 
   "train_set": "music.train.index",
