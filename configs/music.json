@@ -10,14 +10,14 @@
   "seq": 2048,
   "cores_per_replica": 8,
   "per_replica_batch": 1,
-  "gradient_accumulation_steps": 16,
+  "gradient_accumulation_steps": 32,
 
-  "warmup_steps": 7,
-  "anneal_steps": 65,
+  "warmup_steps": 86,
+  "anneal_steps": 778,
   "lr": 5e-5,
   "end_lr": 1e-5,
   "weight_decay": 0.1,
-  "total_steps": 72,
+  "total_steps": 864,
 
   "tpu_size": 8,
 
@@ -27,10 +27,14 @@
   "train_set": "music.train.index",
   "val_set": {},
 
+	
+  "eval_harness_tasks": [
+  ],
+
   "val_batches": 27627,
   "val_every": 80000,
-  "ckpt_every": 72,
-  "keep_every": 72,
+  "ckpt_every": 864,
+  "keep_every": 864,
 
   "name": "music_model",
   "wandb_project": "mesh-transformer-jax",
