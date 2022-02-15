@@ -297,6 +297,7 @@ if __name__ == "__main__":
         S_noise_avg = None
 
         while True:
+            print("step", step)
             if (step % ckpt_every == 1) or step == total_steps:
                 print(f"saving a checkpoint for step {step}")
                 save(network, step, bucket, model_dir,
