@@ -12,12 +12,12 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 32,
 
-  "warmup_steps": 630,
-  "anneal_steps": 5671,
+  "warmup_steps": 636,
+  "anneal_steps": 5724,
   "lr": 3e-5,
   "end_lr": 0.6e-5,
   "weight_decay": 0.1,
-  "total_steps": 6301,
+  "total_steps": 6360,
 
   "tpu_size": 8,
 
@@ -31,10 +31,10 @@
   "eval_harness_tasks": [
   ],
 
-  "val_batches": 96660,
+  "val_batches": 203514,
   "val_every": 80000,
-  "ckpt_every": 6301,
-  "keep_every": 6301,
+  "ckpt_every": 6360,
+  "keep_every": 6360,
 
   "name": "music_model",
   "wandb_project": "mesh-transformer-jax",
